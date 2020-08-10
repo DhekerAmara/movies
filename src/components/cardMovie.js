@@ -1,6 +1,6 @@
 import React from "react";
 import  Card  from 'react-bootstrap/Card';
-import { Rate } from 'antd';
+import  Rate  from './rate';
 import 'antd/dist/antd.css'
 export default function Cards(props) {
   return (
@@ -12,7 +12,7 @@ export default function Cards(props) {
     <Card.Text>
     {props.movie.description}
     </Card.Text>
-    <Rate />
+    <Rate rating={props.movie.rating} /> 
   </Card.Body>
 
   <Card.Body>
